@@ -1,0 +1,18 @@
+main {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.img-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-row: auto;
+  gap: 12px;
+  padding: 20px;
+}
+
+@media (min-width: 769px) {
+  .img-list-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
